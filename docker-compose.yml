@@ -1,0 +1,12 @@
+version: '3'
+services:
+  app:
+    build: .
+    image: test0008-img
+    volumes:
+      - ./app:/app
+    ports:
+      - "8014:8014"
+    tty: true
+#    command:
+#      sh -c "node /app/webserver.js"
